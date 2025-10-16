@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Smart Autofill</title>
+  <style>
+    body { font-family: sans-serif; width: 250px; padding: 10px; }
+    input { width: 100%; margin-bottom: 8px; padding: 5px; }
+    button { width: 100%; padding: 6px; }
+  </style>
+</head>
+<body>
+  <h3>My Info</h3>
+  <input id="firstname" placeholder="First Name" />
+  <input id="lastname" placeholder="Last Name" />
+  <input id="email" placeholder="Email" />
+  <input id="phone" placeholder="Phone" />
+  <input id="city" placeholder="City" />
+  <input id="country" placeholder="Country" />
+  <input id="zip" placeholder="Zip" />
+  <input id="gender" placeholder="Gender" />
+
+  <button id="save">Save</button>
+  <hr />
+  <button id="fill">Autofill Page</button>
+
+  <script src="browser-polyfill.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

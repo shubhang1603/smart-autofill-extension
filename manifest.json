@@ -1,0 +1,34 @@
+{
+  "manifest_version": 2,
+  "name": "Smart Autofill",
+  "version": "1.0",
+  "description": "Custom cross-browser autofill extension.",
+  "permissions": ["storage", "activeTab"],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["browser-polyfill.js"]
+  },
+  "icons": {
+    "48": "icon.png"
+  },
+  "browser_specific_settings": {
+  "gecko": {
+    "id": "smart-autofill-yourname@example.com",
+    "data_collection_permissions": {
+      "required": ["none"],
+      "optional": []
+    }
+  }
+}
+}
